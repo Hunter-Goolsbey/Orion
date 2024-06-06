@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <h3>{% block title %} {{ orgMaster }} {% endblock %}</h3>
+    </div>
+    <hr>
+    <div class="container-float">
+        <h2>{% block subtitle %} Employees {% endblock %}</h2>
+    </div>
+    <hr>
+    <div class="list-group">
+    {% for message in messages %}
+        <button type="button" class="list-group-item list-group-item-action">
+            {{ message['employee'] }}  [{{ message['employeeID'] }}] - {{ message['organization'] }}
+        </button>
+    {% endfor %}
+{% endblock %}

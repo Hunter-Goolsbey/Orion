@@ -1,0 +1,10 @@
+1. Client opens site
+2. Client creates organization
+3. Client creates employees under organization, configuring names, team, & TerrID
+4. Client creates employee compensation rules, thresholds, and stipulations
+5. Client adds additional employees
+6. Client generates payroll for employees, and team leads
+7. Payroll is generated, connected to Payroll reporting platform,
+   and filed accordingly
+8. Final Payroll report is generated as PDF and posted to 
+   Managerial Accounting Log Folder on Sharepoint

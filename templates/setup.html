@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Set Organization name {% endblock %}</h1>
+<form method="post" class="form-inline">
+    <div class="form-group">
+        <label for="organizationName">Organization Name</label>
+        <br>
+        <input class="form-control mr-sm-2" type="text" name='organizationName'
+           placeholder="Organization name"
+           value="{{ request.form['organizationName'] }}"></input>
+    </div>
+
+    <!-- <br>
+
+    <label for="organization">Designated organization:</label> -->
+    <!-- <br>
+    <textarea name="organization"
+              placeholder="Designate organization name"
+              rows="15"
+              cols="60"
+              >{{ request.form['organization'] }}</textarea>
+    <br> -->
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+</form>
+
+{% endblock %}
